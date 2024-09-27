@@ -13,9 +13,35 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/font-awesome.min.css" />
   <link rel="stylesheet" href="/css/css.css" />
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100%;
+            height: 700px;
+            background-color: rgb(230, 134, 134);
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
  </head>
  <!--背景图片地址-->
- <body style="background: url(/image/beijing.mp4) no-repeat 0 0/100% 100%;">
+ <body >
+  <div class="box">
+        <!-- autoplay 自动播放  loop循环播放  muted 声音 preload 预加载 -->
+        <video autoplay loop muted="" preload>
+            <source src="/image/beijing.mp4">
+        </video>
   <div id="wrapper">
    <header id="header">
     <div class="logo">
@@ -73,6 +99,7 @@
      <p></p>
     </footer>
    </footer>
-  </div> 
+  </div>
+  </div>
  </body>
 </html>

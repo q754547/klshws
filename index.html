@@ -27,17 +27,26 @@
             top: 0;
             left: 0;
         }
-
+        #d1{
+            opacity: 0.5;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
     </style>
  </head>
  <!--背景图片地址-->
  <body >
   <div>
         <!-- autoplay 自动循环播放 by：oaima.com -->
-        <video autoplay loop muted preload volume="1">
+        <video autoplay loop muted preload >
             <source src="./image/beijing.webm">
         </video>
-        <video autoplay loop muted preload volume="1"> <source src="./image/beijing.mp3"></video>
+    <div id="d1">
+        <audio id="a1" controls autoplay loop>
+        <source src="./image/beijing.mp3">
+    </audio>
+    </div>
   <div id="wrapper">
    <header id="header">
     <div class="logo">

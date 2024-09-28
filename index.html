@@ -16,26 +16,24 @@
   <link rel="stylesheet" href="/css/css.css" />
   <!--  设置视频背景参数  -->
   <style>
-  #video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
- }
-    </style>
+   video{  
+                  height: 100%;
+                  width: 100%;
+                  position: absolute;  
+                  right: 0px;  
+                  bottom: 0px;  
+                  z-index:-1;
+       }  
+  </style>
  </head>
  <!--背景图片地址-->
  <body >
   <div>
         <!-- autoplay 自动循环播放 by：oaima.com -->
-  <div id="video-container">
-  <video autoplay loop muted>
-    <source src="./image/beijing.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+
+<video src="./image/beijing.mp4" style="width: 100%;height: 100%;object-fit:cover;position:absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted=""></video>
+
+
 </div>
   <div id="wrapper">
    <header id="header">
